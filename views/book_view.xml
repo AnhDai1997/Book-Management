@@ -9,6 +9,7 @@
                 <field name="author_name" />
                 <field name="book_type" />
                 <field name="rent_price" />
+                <field name="currency_id" />
                 <field name="rented" />
             </tree>
         </field>
@@ -20,15 +21,22 @@
             <form string="">
                 <sheet>
                     <group>
-                        <h1>
-                            <field name="name" />
-                        </h1>
-                        <field name="author_name" />
-                        <field name="publishing_company" />
-                        <field name="publish_year" />
-                        <field name="book_type" />
-                        <field name="rent_price" />
-                        <field name="rented" />
+                        <group>
+                             <h1>
+                                <field name="name" />
+                            </h1>
+                            <field name="author_name" />
+                            <field name="publishing_company" />
+                            <field name="publish_year" />
+                            <field name="book_type" />
+
+                            <field name="rent_price" />
+                            <field name="currency_id" />
+                
+                            <field name="rented" />
+                        </group>
+                       
+                        <field name="borrow_ids" />
                     </group>
                 </sheet>
             </form>

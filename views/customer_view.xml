@@ -36,7 +36,7 @@
                             <field name="image" widget="image"/>
                         </group>
                     </group>
-                    <!-- <field name="id_borrow" /> -->
+                    <!-- <field name="borrow_ids" /> -->
                 </sheet>
             </form>
         </field>

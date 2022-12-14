@@ -10,7 +10,7 @@
         Long description of module's purpose
     """,
 
-    'author': "My Company",
+    'author': "AnhDaiDo",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -24,12 +24,15 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
+        'security/book_management_security.xml',
         'views/views.xml',
         'views/templates.xml',
         'views/customer_view.xml',
         'views/book_view.xml',
-        'views/borrow_view.xml'
+        'views/borrow_view.xml',
+        'data/customer.csv',
+        'data/book.csv'
     ],
     # only loaded in demonstration mode
     'demo': [

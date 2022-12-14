@@ -11,7 +11,7 @@ class customer(models.Model):
     address = fields.Text(string="Địa chỉ")
     expiredate=fields.Datetime(string=" Ngày hết hạn thẻ",required = True)
 
-    id_borrows = fields.One2many("borrow","id_customer",string = "Các lần mượn sách")
+    borrow_ids = fields.One2many("borrow","id_customer",string = "Các lần mượn sách")
 
     @api.constrains('cmt')
     def check_cmt_format(self):
