@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="report_view_form" model="ir.ui.view">
+        <field name="name">report.view.form</field>
+        <field name="model">report</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                        <field name="month" />
+                        <field name="year" />
+                        <field name="update_day" />
+                        <field name="number_borrow" />
+                        <field name="renvenue" />
+                        <button string="Cập nhật" name="update_report" type="object" class="oe_highlight"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="report_view_tree" model="ir.ui.view">
+        <field name="name">report.view.tree</field>
+        <field name="model">report</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="month" />
+                <field name="year" />
+                <field name="number_borrow" />
+                <field name="renvenue" />
+                <field name="currency_id" />
+                <button string="Cập nhật" name="update_report" type="object" class="oe_highlight"/>
+            </tree>
+        </field>
+    </record>
+    <record id="report_action" model="ir.actions.act_window">
+        <field name="name">Báo cáo</field>
+        <field name="res_model">report</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="report_menu"
+        name="Báo cáo"
+        action="report_action"
+        groups="base.group_user"
+        parent="book_management_menu"
+        sequence="4"/>
+</odoo>

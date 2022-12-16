@@ -1,6 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_book_manager,access_book,model_book,group_manager,1,1,1,1
-
+access_report_manager,access_report,model_report,group_manager,1,1,1,1
 access_book_librarian,access_book,model_book,group_librarian,1,0,0,0
 access_borrow_librarian,access_borrow,model_borrow,group_librarian,1,1,1,1
 access_customer_librarian,access_customer,model_customer,group_librarian,1,1,1,1

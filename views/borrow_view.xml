@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo>    
+    <record id="borrow_view_search" model="ir.ui.view">
+        <field name="name">borrow.view.search</field>
+        <field name="model">borrow</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <field name="customer_name" />
+                <field name="customer_cmt" />
+                <!-- <field name="borrow_day" /> -->
+            </search>
+        </field>
+    </record>
+
     <record id="borrow_view_tree" model="ir.ui.view">
         <field name="name">borrow.view.tree</field>
         <field name="model">borrow</field>
@@ -12,9 +24,11 @@
                 <field name="give_back_day" />
                 <field name="total_price" />
                 <field name="currency_id" />
+                <button string="Trả sách" name="give_back_btn" type="object" class="oe_highlight"/>
             </tree>
         </field>
     </record>
+
     <record id="borrow_view_form" model="ir.ui.view">
         <field name="name">borrow.view.form</field>
         <field name="model">borrow</field>
@@ -65,5 +79,5 @@
         action="borrow_action"
         groups="base.group_user"
         parent="book_management_menu"
-        sequence="10"/>
+        sequence="3"/>
 </odoo>

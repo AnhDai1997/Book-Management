@@ -3,3 +3,4 @@
 from . import customer
 from . import book
 from . import borrow
+from . import report

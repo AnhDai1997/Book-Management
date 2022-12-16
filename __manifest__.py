@@ -24,15 +24,18 @@
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
         'security/book_management_security.xml',
+        'security/ir.model.access.csv',
+        
         'views/views.xml',
         'views/templates.xml',
         'views/customer_view.xml',
         'views/book_view.xml',
         'views/borrow_view.xml',
+        'views/report_view.xml',
         'data/customer.csv',
-        'data/book.csv'
+        'data/book.csv',
+        # 'data/borrow.csv'
     ],
     # only loaded in demonstration mode
     'demo': [

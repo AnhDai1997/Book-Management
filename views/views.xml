@@ -56,5 +56,6 @@
     <menuitem name="Server to list" id="quan_ly_sach" parent="quan_ly_sach.menu_2"
               action="quan_ly_sach.action_server"/>
 -->
+
   </data>
 </odoo>
